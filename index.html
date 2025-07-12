@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sandy — Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --primary: #7dd3fc; /* light blue aesthetic */
+      --bg-dark: #0f172a;
+      --bg-light: #f8fafc;
+      --text-dark: #0f172a;
+      --text-light: #fff;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: var(--bg-dark);
+      color: var(--text-light);
+      line-height: 1.6;
+    }
+    a { color: var(--primary); text-decoration: none; }
+    header {
+      padding: 100px 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      min-height: 100vh;
+    }
+    header h1 {
+      font-size: 48px;
+      color: var(--primary);
+    }
+    header p {
+      font-size: 20px;
+      margin-top: 10px;
+      color: #cbd5e1;
+    }
+    section {
+      padding: 80px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    section h2 {
+      font-size: 32px;
+      color: var(--primary);
+      margin-bottom: 20px;
+      text-align: center;
+    }
+    .about {
+      background: var(--bg-light);
+      color: var(--text-dark);
+      border-radius: 12px;
+      padding: 40px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    }
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      margin-top: 40px;
+    }
+    .project-card {
+      background: #1e293b;
+      border-radius: 12px;
+      overflow: hidden;
+      cursor: pointer;
+      transition: transform 0.4s, box-shadow 0.4s;
+    }
+    .project-card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 20px 40px rgba(125, 211, 252, 0.3);
+    }
+    .project-card img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+    }
+    .project-card div {
+      padding: 20px;
+    }
+    .project-card h3 {
+      margin-bottom: 10px;
+      color: var(--primary);
+    }
+    footer {
+      text-align: center;
+      padding: 40px 20px;
+      background: #1e293b;
+      margin-top: 60px;
+    }
+    .button {
+      display: inline-block;
+      padding: 10px 20px;
+      background: var(--primary);
+      color: var(--text-dark);
+      border-radius: 5px;
+      font-weight: 600;
+      transition: background 0.3s;
+    }
+    .button:hover {
+      background: #38bdf8;
+    }
+    @media (max-width: 600px) {
+      header h1 { font-size: 32px; }
+      header p { font-size: 16px; }
+      section h2 { font-size: 24px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Sandy</h1>
+    <p>Web-dev | Security innovator</p>
+  </header>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <div class="about">
+      <p>
+        I’m a dynamic, security-aware Full-stack Web & Mobile Developer (iOS/Android), marketing expert, and solopreneur. Skilled in digital marketing, e-commerce, dropshipping, and digital products, I also excel in AI, programming, web security, and automation. Passionate about continuous learning, side hustles, and gaming (Minecraft 🥰), I integrate security into every layer of development and business.
+      </p>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="projects-grid">
+      <div class="project-card">
+        <img src="https://via.placeholder.com/400x250?text=CyberShield" alt="CyberShield" />
+        <div>
+          <h3>CyberShield</h3>
+          <p>Termux-based bash script tool to protect people from cyber crime.</p>
+        </div>
+      </div>
+      <div class="project-card">
+        <img src="https://via.placeholder.com/400x250?text=Igdefender" alt="Igdefender" />
+        <div>
+          <h3>Igdefender</h3>
+          <p>Tool to report cyber crime on Instagram.</p>
+        </div>
+      </div>
+      <div class="project-card">
+        <img src="https://via.placeholder.com/400x250?text=HackerCLI" alt="HackerCLI" />
+        <div>
+          <h3>HackerCLI</h3>
+          <p>Interface for hackers with cybersecurity tools available.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <a href="https://guns.lol/shieldwiz" target="_blank" class="button">Connect via Guns.lol</a>
+    <p style="margin-top: 10px; color: #94a3b8;">© 2025 Sandy. All rights reserved.</p>
+  </footer>
+</body>
+</html>
